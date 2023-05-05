@@ -491,7 +491,7 @@ void SaveFileMessagebox(HWND hWnd, int size)
         free(FileName);
         FileName = NULL;
 
-        if(IDYES == MessageBox(hWnd, TEXT(msg), TEXT("Notepad - by HARSH !"), MB_YESNO | MB_ICONEXCLAMATION |MB_APPLMODAL))
+        if(IDYES == MessageBox(hWnd, (msg), TEXT("Notepad - by HARSH !"), MB_YESNO | MB_ICONEXCLAMATION |MB_APPLMODAL))
         {
             if(path[0] != '\0')
                 size = nWriteFile(path);
